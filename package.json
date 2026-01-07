@@ -1,0 +1,23 @@
+{
+  "name": "algorithm-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanghyun1128/algorithm-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanghyun1128/algorithm-practice/issues"
+  },
+  "homepage": "https://github.com/sanghyun1128/algorithm-practice#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}
