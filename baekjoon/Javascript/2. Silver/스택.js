@@ -1,5 +1,9 @@
 // Setup for reading input for Baekjoon problems
-const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
+const input = require('fs')
+  .readFileSync('/dev/stdin')
+  .toString()
+  .trim()
+  .split('\n');
 
 // Setup for reading input from a local file for testing purposes
 // const input = require('fs').readFileSync(__dirname + '/input.txt').toString().trim().split('\n');
@@ -13,7 +17,7 @@ class Stack {
   push(newItem) {
     this.array[++this.topIndex] = newItem;
   }
-  
+
   pop() {
     if (this.topIndex === -1) return -1;
 
@@ -36,7 +40,6 @@ class Stack {
   }
 }
 
-
 const count = parseInt(input[0], 10);
 const commands = input.slice(1);
 
@@ -44,7 +47,7 @@ const stack = new Stack();
 
 for (let i = 0; i < count; i++) {
   const [c1, c2] = commands[i].split(' ');
-  
+
   switch (c1) {
     case 'push':
       stack.push(c2);
